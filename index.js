@@ -9,7 +9,7 @@ const posts = require('./Posts.js');
 
 mongoose.set('strictQuery', tryarue);
 
-mongoose.connect('mongodb+srv://root:271121@cluster0.mhdtgfi.mongodb.net/portal_de_noticia',{useNewUrlParser:true,useUnifiedTopology:true}).then( ()=>{
+mongoose.connect('mongodb+srv://root:<password>@cluster0.mhdtgfi.mongodb.net/portal_de_noticia',{useNewUrlParser:true,useUnifiedTopology:true}).then( ()=>{
     console.log('conectado com sucesso');
 }).catch( (err)=>{
 console.log(err.message)
